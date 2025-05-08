@@ -1,9 +1,5 @@
-var1= -DDOWN -DSTART_ROW -DSTART_COL
-
 main: var1 var2 var3 var4 var5 var6 var7 var8 var9 var10 var11 var12 var13 var14 var15 var16 var25 var26 var27 var28 var29 var30 var31 var32
 
-test: test.cpp logic_iteration.cpp
-	g++ ${var1} test.cpp logic_iteration.cpp
 
 var1: main.cpp logic_iteration.cpp
 	g++ -o var1 -DSNAKE -DDOWN -DSTART_ROW -DSTART_COL main.cpp logic_iteration.cpp
